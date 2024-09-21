@@ -19,8 +19,8 @@ document.getElementById('btn-add-money')
         
     }
     else{
-        alert('failed')
+        alert('failed add money')
     }
 
-    
+
 })
