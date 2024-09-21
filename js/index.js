@@ -6,14 +6,16 @@ document.getElementById('log-in-button')
     const phoneNumber = document.getElementById('number-input').value;
     const pinNumber = document.getElementById('pin-input').value;
 
-    
-    if(phoneNumber === '01734989479' && pinNumber === "1234"){
+    if(phoneNumber === '017' && pinNumber === "1234"){
         
         window.location.href = "/home.html";
         
     }
     else{
-        alert('invalid pin or number');
+        alert('Invalid pin or number');
     }
 
 })
+
+
+
