@@ -8,7 +8,7 @@ document.getElementById('log-in-button')
 
     if(phoneNumber === '017' && pinNumber === "1234"){
         
-        window.location.href = "/home.html";
+        window.location.href = "./home.html";
         
     }
     else{
