@@ -1,14 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <main>
-        <h1>nfjdsnk</h1>
+    <main class="flex items-center justify-center">
+
+        <div class="mockup-phone border-primary">
+            <div class="camera">
+            </div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-1 bg-gray-900">
+
+                    <div class="stat bg-blue-800 text-primary-content mt-8">
+                        <div class="stat ">
+                            <div class="stat-value text-2xl flex justify-center">8900</div>
+                            <div class="stat-title text-white text-xl flex justify-center">Account balance</div>
+                        </div>
+                    </div>
+                    <div class="divider bg-slate-600"></div>
+
+                    <div class=" grid grid-cols-6 space-x-3 gap-2">
+                        <button class="btn btn-primary col-span-2">Add money</button>
+                        <button class="btn btn-primary col-span-2">Cash Out</button>
+                        <button class="btn btn-primary col-span-2">Transaction History</button>
+                    </div>
+                    <div class="divider bg-slate-600"></div>
+
+                    <div class="bg-slate-300">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Amount</span>
+                                </label>
+                                <input id="amount-input" type="" placeholder="Amount"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin</span>
+                                </label>
+                                <input id="cash-out-pin" type="password" placeholder="pin"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="log-in-button" class="btn btn-primary">Add money</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
     </main>
-    
+
 </body>
+
 </html>
