@@ -17,6 +17,8 @@ document.getElementById('btn-add-money')
         const newBalance = balance + addMoney;
         document.getElementById('balance').innerText = newBalance;
 
+         document.getElementById('addmoney-input').value = '';
+         document.getElementById('addmoney-pin').value = '';
 
 
         const div = document.createElement('div');
@@ -62,10 +64,13 @@ document.getElementById('btn-cashout')
             alert('Not enought money')
             return;
         }
-        
+
         const updateBalance = balance - cashOut ;
 
         document.getElementById('balance').innerText = updateBalance;
+
+         document.getElementById('cashout-input').value = '';
+         document.getElementById('Cash-Out-pin').value = '';
 
         const div = document.createElement('div');
         div.classList.add('border-2')
