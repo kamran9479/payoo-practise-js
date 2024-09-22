@@ -10,6 +10,15 @@ document.getElementById('btn-add-money')
         const newBalance = balance + addMoney;
         document.getElementById('balance').innerText = newBalance;
 
+
+
+        const div = document.createElement('div');
+        div.classList.add('border-2')
+        div.innerHTML = `<h3 class="font-black text-sm">Add Money</h3>
+                        <p>TK: ${addMoney} added   New Balance ${newBalance} TK`
+
+         document.querySelector('.transaction-history').appendChild(div);
+
         
     }
     else{
@@ -37,6 +46,13 @@ document.getElementById('btn-cashout')
 
         document.getElementById('balance').innerText = updateBalance;
 
+        const div = document.createElement('div');
+        div.classList.add('border-2')
+        div.innerHTML = `<h3 class="font-black text-sm">Cash Out</h3>
+                        <p>TK: ${cashOut} Cashout   New Balance ${updateBalance} TK`
+
+         document.querySelector('.transaction-history').appendChild(div);
+
     }
     else{
         alert('Cash-out failed')
@@ -62,3 +78,6 @@ document.getElementById('show-transaction')
 
     showSection('transaction-section');
 });
+
+
+
