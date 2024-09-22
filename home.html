@@ -27,20 +27,20 @@
                     <div class="divider bg-slate-600"></div>
 
                     <div class=" grid grid-cols-6 space-x-3 gap-2">
-                        <button class="btn btn-primary col-span-2">Add money</button>
-                        <button class="btn btn-primary col-span-2">Cash Out</button>
-                        <button class="btn btn-primary col-span-2">Transaction History</button>
+                        <button id="show-addmoney" class="btn btn-primary col-span-2">Add money</button>
+                        <button id="show-cashout" class="btn btn-primary col-span-2">Cash Out</button>
+                        <button id="show-transaction" class="btn btn-primary col-span-2">Transaction History</button>
                     </div>
                     <div class="divider bg-slate-600"></div>
 
-                    <div class="bg-slate-300">
+                    <div id="addmoney-section" class="bg-slate-300">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Amount</span>
                                 </label>
-                                <input id="addmoney-input" type="" placeholder="Amount"
-                                    class="input input-bordered" required />
+                                <input id="addmoney-input" type="" placeholder="Amount" class="input input-bordered"
+                                    required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
@@ -59,8 +59,42 @@
 
 
 
+                    <div class="bg-slate-300"></div>
+                    <form id="cashout-section" class="hidden card-body bg-amber-100">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Cash-Out</span>
+                            </label>
+                            <input id="cashout-input" type="" placeholder="Amount" class="input input-bordered"
+                                required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Pin</span>
+                            </label>
+                            <input id="Cash-Out-pin" type="password" placeholder="Pin Number"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="btn-cashout" class="btn btn-primary">Cash-Out</button>
+                        </div>
+                    </form>
+
+
+
+
+
+                    <div id="transaction-section" class="hidden bg-lime-100 card-body">
+                        <h1 class="text-2xl font-bold flex justify-center">transaction history</h1>
+                    </div>
                 </div>
+
+
+
+
+
             </div>
+        </div>
         </div>
 
     </main>

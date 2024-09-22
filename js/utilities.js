@@ -13,3 +13,16 @@ function getTextByNumber(id){
     return textNumber;
 
 }
+
+
+
+function showSection(id){
+
+    document.getElementById('addmoney-section').classList.add('hidden');
+    document.getElementById('cashout-section').classList.add('hidden');
+    document.getElementById('transaction-section').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
+
+
+}
