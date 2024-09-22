@@ -5,6 +5,13 @@ document.getElementById('btn-add-money')
     const addMoney = getInputByID('addmoney-input');
     const addMoneyPin = getInputByID('addmoney-pin');
 
+
+    if(isNaN(addMoney)){
+        alert('Input should be a number')
+        return;
+    }
+
+
     if(addMoneyPin === 1234){
         const balance = getTextByNumber('balance');
         const newBalance = balance + addMoney;
@@ -39,9 +46,23 @@ document.getElementById('btn-cashout')
     const cashOut = getInputByID('cashout-input');
     const cashOutPin = getInputByID('Cash-Out-pin');
 
+
+    if(isNaN(cashOut)){
+        alert('Input should be a number')
+        return;
+    }
+
+    
+
     if(cashOutPin === 1234){
 
         const balance = getTextByNumber('balance');
+
+        if(cashOut > balance){
+            alert('Not enought money')
+            return;
+        }
+        
         const updateBalance = balance - cashOut ;
 
         document.getElementById('balance').innerText = updateBalance;
