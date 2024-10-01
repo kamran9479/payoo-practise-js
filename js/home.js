@@ -12,7 +12,7 @@ document.getElementById('btn-add-money')
     }
 
 
-    if(addMoneyPin === 1234){
+    if(addMoneyPin === 'nadiaislove'){
         const balance = getTextByNumber('balance');
         const newBalance = balance + addMoney;
         document.getElementById('balance').innerText = newBalance;
@@ -56,7 +56,7 @@ document.getElementById('btn-cashout')
 
     
 
-    if(cashOutPin === 1234){
+    if(cashOutPin === 'nadiaislove'){
 
         const balance = getTextByNumber('balance');
 

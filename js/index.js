@@ -6,7 +6,7 @@ document.getElementById('log-in-button')
     const phoneNumber = document.getElementById('number-input').value;
     const pinNumber = document.getElementById('pin-input').value;
 
-    if(phoneNumber === '017' && pinNumber === "1234"){
+    if(phoneNumber === '017' && pinNumber === "nadiaislove"){
         
         window.location.href = "./home.html";
         
