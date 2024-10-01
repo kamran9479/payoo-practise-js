@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    background-color: #f163de;
+    overflow-x: hidden;
+}
+
+/* Parallax background with a flirty, romantic vibe */
+.parallax {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://example.com/romantic-bg.jpg'); /* Use a soft romantic background */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -2;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease forwards;
+}
+
+p {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 2s ease forwards;
+}
+
+.btn {
+    background-color: #37d9e1;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 2.5s ease forwards;
+}
+
+.btn:hover {
+    background-color: #c2185b;
+}
+
+.hidden-message {
+    display: none;
+    margin-top: 30px;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.hidden-message img {
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Flying hearts, flowers, and stars */
+.heart-container, .flower-container, .star-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.heart, .flower, .star {
+    position: absolute;
+    background-color: transparent;
+    background-size: contain;
+    animation: float 7s infinite;
+    opacity: 0.8;
+}
+
+.heart {
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freeiconspng.com%2Fimages%2Fheart-icon&psig=AOvVaw27DJ-TgiQtG3Tn_noZf_0q&ust=1727888971742000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMiumZbW7YgDFQAAAAAdAAAAABAE'); /* Replace with a heart icon */
+    width: 50px;
+    height: 50px;
+}
+
+.flower {
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freeiconspng.com%2Fimages%2Fheart-icon&psig=AOvVaw27DJ-TgiQtG3Tn_noZf_0q&ust=1727888971742000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMiumZbW7YgDFQAAAAAdAAAAABAE'); /* Replace with a flower icon */
+    width: 70px;
+    height: 70px;
+}
+
+.star {
+    background-image: url('https://example.com/star-icon.png'); /* Replace with a star icon */
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+}
